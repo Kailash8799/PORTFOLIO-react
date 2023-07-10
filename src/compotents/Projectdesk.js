@@ -10,25 +10,25 @@ const variants = {
     return {
       x: direction > 0 ? 1000 : -1000,
       opacity: 0,
+      height:"100%"
     };
   },
   center: {
     zIndex: 1,
     x: 0,
     opacity: 1,
+    height:"100%"
   },
   exit: (direction) => {
     return {
-      zIndex: 0,
+      zIndex: 1,
       x: direction < 0 ? 1000 : -1000,
-      opacity: 0,
+      opacity: 1,
+      height:"100%"
     };
   },
 };
-const swipeConfidenceThreshold = 10000;
-const swipePower = (offset, velocity) => {
-  return Math.abs(offset) * velocity;
-};
+
 
 const Projectdesk = (props) => {
   const images = props?.img;
@@ -68,7 +68,7 @@ const Projectdesk = (props) => {
               <div className="example-container">
                 <AnimatePresence initial={false} custom={direction}>
                   <motion.img
-                    className="w-full h-full overflow-hidden imgi"
+                    className="relative top-0 left-0 w-full h-full overflow-hidden imgi"
                     key={page}
                     loading="eager"
                     src={images[imageIndex]}
@@ -78,20 +78,8 @@ const Projectdesk = (props) => {
                     animate="center"
                     exit="exit"
                     transition={{
-                      x: { type: "spring", stiffness: 320, damping: 30 },
+                      x: { type: "tween", stiffness: 320, damping: 30 },
                       opacity: { duration: 0.2 },
-                    }}
-                    // drag="x"
-                    dragConstraints={{ left: 0, right: 0 }}
-                    dragElastic={1}
-                    onDragEnd={(e, { offset, velocity }) => {
-                      const swipe = swipePower(offset.x, velocity.x);
-
-                      if (swipe < -swipeConfidenceThreshold) {
-                        paginate(1);
-                      } else if (swipe > swipeConfidenceThreshold) {
-                        paginate(-1);
-                      }
                     }}
                   />
                 </AnimatePresence>
