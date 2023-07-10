@@ -70,6 +70,7 @@ const Projectdesk = (props) => {
                   <motion.img
                     className="w-full h-full overflow-hidden imgi"
                     key={page}
+                    loading="eager"
                     src={images[imageIndex]}
                     custom={direction}
                     variants={variants}
