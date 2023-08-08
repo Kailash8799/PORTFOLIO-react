@@ -7,7 +7,7 @@ const Imagecomp = ({ src }) => {
       <img
         src={src}
         alt={src + "Image"}
-        className="block rounded-lg imgw"
+        className="block min-h-[200px] rounded-lg imgw"
       />
   );
 };

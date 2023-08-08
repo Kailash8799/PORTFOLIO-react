@@ -28,7 +28,7 @@ const Projectdesk = (props) => {
         <div className="relative z-50 py-3 my-5 rounded-lg bgback">
           <div className="text-white lg:flex clasna">
             <div className="justify-center mx-auto lg:w-3/5 wclass lg:my-auto">
-              <div className="inline-block h-full p-3 mx-3 overflow-hidden rounded-lg min-w-max divimg md:mx-10">
+              <div className="inline-block  min-h-[200px] p-3 mx-3 overflow-hidden rounded-lg  divimg md:mx-10">
                 {/* {images.forEach((item, key) => {
                 key === imgs && <Imagecomp key={key} src={`/${item}`} />;
               })} */}
