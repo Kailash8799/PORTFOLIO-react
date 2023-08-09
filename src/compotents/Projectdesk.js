@@ -31,7 +31,7 @@ const Projectdesk = (props) => {
           y: 0,
           transition: { duration: 1, ease: "easeInOut" },
         }}
-        exit={{y:100}}
+        exit={{ y: 100 }}
       >
         <div className="relative z-50 py-3 my-5 rounded-lg bgback">
           <div className="text-white lg:flex clasna">
@@ -121,13 +121,27 @@ const Projectdesk = (props) => {
                   className="mx-3 mb-2 text-white hoverbtn font fontw"
                   variant="outlined"
                 >
-                  Demo
+                  <a
+                    className=" text-white hoverbtn text-decoration-none "
+                    href={props?.link}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Demo
+                  </a>
                 </Button>
                 <Button
                   className="mb-2 text-white hoverbtn font fontw"
                   variant="outlined"
                 >
-                  GitHub
+                  <a
+                    className=" text-white hoverbtn text-decoration-none "
+                    href={"https://github.com/Kailash8799"}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Github
+                  </a>
                 </Button>
               </div>
             </div>
