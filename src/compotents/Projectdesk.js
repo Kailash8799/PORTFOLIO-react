@@ -36,7 +36,7 @@ const Projectdesk = (props) => {
         <div className="relative z-50 py-3 my-5 rounded-lg bgback">
           <div className="text-white lg:flex clasna">
             <div className="justify-center mx-auto lg:w-3/5 wclass lg:my-auto">
-              <div className="inline-block min-w-fit min-h-[200px] p-3 mx-3 overflow-hidden rounded-lg  divimg md:mx-10">
+              <div className="inline-block min-w-fit max-h-[500px] min-h-[250px] p-3 mx-3 overflow-hidden rounded-lg  divimg md:mx-10">
                 {/* {images.forEach((item, key) => {
                 key === imgs && <Imagecomp key={key} src={`/${item}`} />;
               })} */}
@@ -136,7 +136,7 @@ const Projectdesk = (props) => {
                 >
                   <a
                     className=" text-white hoverbtn text-decoration-none "
-                    href={"https://github.com/Kailash8799"}
+                    href={props?.github}
                     target="_blank"
                     rel="noreferrer"
                   >
