@@ -56,7 +56,7 @@ const About = () => {
           desc="A Food delivery app made with react js for order food from one particular restaurant or canteen"
           lang={["reacti.svg", "javascripti.svg"]}
           link={"https://food-delivery-react-js-app.vercel.app"}
-          github={"https://github.com/Kailash8799/food-delivery-next-js"}
+          github={"https://github.com/Kailash8799/food-delivery-react-js"}
         />
         <Projectdesk
           img={["em1.png", "em2.png", "em3.png", "em4.png", "em5.png", "em6.png", "em7.png"]}
