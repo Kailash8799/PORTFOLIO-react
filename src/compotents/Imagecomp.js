@@ -6,6 +6,7 @@ const Imagecomp = ({ src }) => {
   return (
       <img
         src={src}
+        loading="lazy"
         alt={src + "Image"}
         className="block w-full mx-auto max-h-[400px] object-contain min-h-[200px] rounded-lg imgw"
       />
