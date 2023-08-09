@@ -24,11 +24,19 @@ const Projectdesk = (props) => {
   };
   return (
     <AnimatePresence>
-      <div>
+      <motion.div
+        initial={{ y: 100 }}
+        viewport={{ once: true }}
+        whileInView={{
+          y: 0,
+          transition: { duration: 1, ease: "easeInOut" },
+        }}
+        exit={{y:100}}
+      >
         <div className="relative z-50 py-3 my-5 rounded-lg bgback">
           <div className="text-white lg:flex clasna">
             <div className="justify-center mx-auto lg:w-3/5 wclass lg:my-auto">
-              <div className="inline-block  min-h-[200px] p-3 mx-3 overflow-hidden rounded-lg  divimg md:mx-10">
+              <div className="inline-block min-w-fit min-h-[200px] p-3 mx-3 overflow-hidden rounded-lg  divimg md:mx-10">
                 {/* {images.forEach((item, key) => {
                 key === imgs && <Imagecomp key={key} src={`/${item}`} />;
               })} */}
@@ -41,12 +49,12 @@ const Projectdesk = (props) => {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{
                           duration: 0.8,
-                          delay: 0.2,
+                          delay: 0,
                           ease: [0, 0.71, 0.2, 1.01],
                         }}
                         exit={{
                           opacity: 0,
-                          x: -1000,
+                          x: 1000,
                         }}
                       >
                         <Imagecomp key={ind} src={`/${item}`} />{" "}
@@ -125,7 +133,7 @@ const Projectdesk = (props) => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </AnimatePresence>
   );
 };

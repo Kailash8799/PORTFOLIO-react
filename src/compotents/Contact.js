@@ -3,43 +3,60 @@ import TextField from "@mui/material/TextField";
 import { Button } from "@mui/material";
 import logo from "./images/logo.svg";
 import "../App.css";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
     <>
-      <div
+      <motion.div
+        initial={{ y: 100 }}
+        viewport={{ once: true }}
+        whileInView={{
+          y: 0,
+          transition: { duration: 1, ease: "easeInOut" },
+        }}
+        exit={{ y: 100 }}
         id="contact"
-        className="bgback rounded-lg sm:mb-4 sm:mx-16 md:mx-10 lg:mx-40 divhcon mt-10 sm:mt-0"
+        className="mt-10 rounded-lg bgback sm:mb-4 sm:mx-16 md:mx-10 lg:mx-40 divhcon sm:mt-0"
       >
-        <div className="sm:pt-10 pt-5 text-center">
-          <h1 className="font text-white border-b-4 rounded-lg border-yellow-500 inline-block ">
+        <div className="pt-5 text-center sm:pt-10">
+          <h1 className="inline-block text-white border-b-4 border-yellow-500 rounded-lg font ">
             Contact Us
           </h1>
         </div>
-        <div className="sm:flex mt-5 pb-5">
-          <div className="divconh sm:w-2/5 text-white mb-5 sm:mb-0 sm:border-r-2 items-center justify-center">
+        <div className="pb-5 mt-5 sm:flex">
+          <div className="items-center justify-center mb-5 text-white divconh sm:w-2/5 sm:mb-0 sm:border-r-2">
             <header className="App-header">
               <img src={logo} className="App-logo" alt="logo" />
             </header>
           </div>
-          <div className="sm:w-3/5 text-white">
-            <form action="https://formsubmit.io/send/kailashrajput8799@gmail.com" method="POST" className="mx-4">
+          <div className="text-white sm:w-3/5">
+            <form
+              action="https://formsubmit.io/send/kailashrajput8799@gmail.com"
+              method="POST"
+              className="mx-4"
+            >
               <TextField
                 required
                 id="filled-required"
                 color="warning"
-                className="conbg w-full rounded-lg"
+                className="w-full rounded-lg conbg"
                 label="Name"
                 variant="filled"
                 name="name"
               />
-              <input name="_redirect" type="hidden" id="name" value="https://kailashrajput.netlify.app"/>
-               {/* <input name="_formsubmi   */}
+              <input
+                name="_redirect"
+                type="hidden"
+                id="name"
+                value="https://kailashrajput.netlify.app"
+              />
+              {/* <input name="_formsubmi   */}
               <TextField
                 required
                 id="filled-required"
                 color="warning"
-                className="conbg w-full rounded-lg my-3"
+                className="w-full my-3 rounded-lg conbg"
                 label="Email"
                 variant="filled"
                 name="email"
@@ -48,16 +65,16 @@ const About = () => {
                 required
                 id="filled-multiline-static"
                 label="Message"
-                className="conbg w-full rounded-lg"
+                className="w-full rounded-lg conbg"
                 multiline
                 color="warning"
                 rows={4}
                 variant="filled"
                 name="message"
               />
-              <div className="mt-3 justify-center text-center">
+              <div className="justify-center mt-3 text-center">
                 <Button
-                  className="hoverbtn text-white font fontw"
+                  className="text-white hoverbtn font fontw"
                   variant="outlined"
                   type="submit"
                 >
@@ -67,7 +84,7 @@ const About = () => {
             </form>
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };

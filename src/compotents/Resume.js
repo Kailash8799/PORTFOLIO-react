@@ -1,54 +1,83 @@
-import { Button } from '@mui/material'
-import React from 'react'
-
+import { Button } from "@mui/material";
+import React from "react";
+import { motion } from "framer-motion";
 
 const Resume = () => {
-    return (
-        <>
-            <div id='resume' className="sm:mx-16 md:mx-10 lg:mx-40 mt-10 sm:mt-0">
-                <div className='sm:pt-10 text-center'>
-                    <h1 className='font text-white border-b-4 rounded-lg border-yellow-500 inline-block '>Resume</h1>
+  return (
+    <>
+      <motion.div
+        initial={{ y: 100 }}
+        viewport={{ once: true }}
+        whileInView={{
+          y: 0,
+          transition: { duration: 1, ease: "easeInOut" },
+        }}
+        exit={{ y: 100 }}
+        id="resume"
+        className="mt-10 sm:mx-16 md:mx-10 lg:mx-40 sm:mt-0"
+      >
+        <div className="text-center sm:pt-10">
+          <h1 className="inline-block text-white border-b-4 border-yellow-500 rounded-lg font ">
+            Resume
+          </h1>
+        </div>
+        <div>
+          <div className="py-3 my-5 rounded-lg bgback">
+            <div className="text-white lg:flex clasna">
+              <div className="justify-center mx-auto lg:w-2/5 wclass lg:my-auto">
+                <div className="inline-block p-3 mx-3 rounded-lg divimg lg:mx-10">
+                  <img
+                    src={`/resumep.svg`}
+                    alt="resume"
+                    className="block rounded-lg imgw"
+                  />
+                  <hr className="border-2 border-yellow-500" />
                 </div>
+              </div>
+              <div className="px-10 lg:w-3/5 wclass p-7">
                 <div>
-                    <div className="bgback my-5 rounded-lg py-3">
-                        <div className='lg:flex clasna text-white'>
-
-                            <div className='lg:w-2/5 wclass lg:my-auto justify-center mx-auto'>
-
-                                <div className='divimg p-3 rounded-lg inline-block lg:mx-10 mx-3'>
-                                    <img src={`/resumep.svg`} alt="resume" className='imgw block rounded-lg' />
-                                    <hr className='border-yellow-500 border-2' />
-
-                                </div>
-                            </div>
-                            <div className='lg:w-3/5 wclass p-7 px-10'>
-                                <div>
-                                    <h1 className='text-center font'>You can find my updated resume by clicking on the link below.</h1>
-                                </div>
-                                    <hr />
-                            
-                                <div>
-                                    <p className='text-2xl font lg:mx-4'>Please feel free to contact for hiring as well as freelance projects through phone / email.</p>
-                                    <div className='rounded-xl lg:flex justify-around items-center'>
-                                        <div className='lanicon p-3 my-2 rounded-xl'>Frontend Developer</div>
-                                        <div className='lanicon p-3 md:mx-1 my-2 rounded-xl'>Frontend Developer</div>
-                                        <div className='lanicon p-3 my-2 rounded-xl'>Frontend Developer</div>
-                                    </div>
-                                </div>
-                                <div></div>
-                                <hr />
-                                <div className='mt-3 justify-center text-center'>
-                                    <Button className='hoverbtn text-white font mb-2 fontw mx-3' variant="outlined">RESUME</Button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  <h1 className="text-center font">
+                    You can find my updated resume by clicking on the link
+                    below.
+                  </h1>
                 </div>
+                <hr />
 
+                <div>
+                  <p className="text-2xl font lg:mx-4">
+                    Please feel free to contact for hiring as well as freelance
+                    projects through phone / email.
+                  </p>
+                  <div className="items-center justify-around rounded-xl lg:flex">
+                    <div className="p-3 my-2 lanicon rounded-xl">
+                      Frontend Developer
+                    </div>
+                    <div className="p-3 my-2 lanicon md:mx-1 rounded-xl">
+                      Frontend Developer
+                    </div>
+                    <div className="p-3 my-2 lanicon rounded-xl">
+                      Frontend Developer
+                    </div>
+                  </div>
+                </div>
+                <div></div>
+                <hr />
+                <div className="justify-center mt-3 text-center">
+                  <Button
+                    className="mx-3 mb-2 text-white hoverbtn font fontw"
+                    variant="outlined"
+                  >
+                    RESUME
+                  </Button>
+                </div>
+              </div>
             </div>
-            <hr className='text-white border-2' />
-        </>
-    )
-}
+          </div>
+        </div>
+      </motion.div>
+      <hr className="text-white border-2" />
+    </>
+  );
+};
 
-export default Resume
+export default Resume;
