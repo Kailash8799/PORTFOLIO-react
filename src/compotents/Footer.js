@@ -25,7 +25,7 @@ const Footer = () => {
                     </a></li>
                 </ul>
                
-                <p className='font'>&copy;2022 Kailash Rajput | All Rights Reserved</p>
+                <p className='font'>&copy;2023 Kailash Rajput | All Rights Reserved</p>
             </footer>
         </div>
     )

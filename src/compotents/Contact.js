@@ -17,7 +17,7 @@ const About = () => {
         }}
         exit={{ y: 100 }}
         id="contact"
-        className="mt-10 rounded-lg bgback sm:mb-4 sm:mx-16 md:mx-10 lg:mx-40 divhcon sm:mt-0"
+        className="mt-10 selection:bg-none rounded-lg bgback sm:mb-4 sm:mx-16 md:mx-10 lg:mx-40 divhcon sm:mt-0"
       >
         <div className="pt-5 text-center sm:pt-10">
           <h1 className="inline-block text-white border-b-4 border-yellow-500 rounded-lg font ">

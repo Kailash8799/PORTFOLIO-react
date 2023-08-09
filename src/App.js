@@ -12,7 +12,6 @@ import Footer from './compotents/Footer'
 const App = ()=>{
   return(
     <>
-
       <Navbar/>
       <Home/>
       <About/>

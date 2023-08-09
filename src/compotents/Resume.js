@@ -14,7 +14,7 @@ const Resume = () => {
         }}
         exit={{ y: 100 }}
         id="resume"
-        className="mt-10 sm:mx-16 md:mx-10 lg:mx-40 sm:mt-0"
+        className="mt-10 selection:bg-none sm:mx-16 md:mx-10 lg:mx-40 sm:mt-0"
       >
         <div className="text-center sm:pt-10">
           <h1 className="inline-block text-white border-b-4 border-yellow-500 rounded-lg font ">

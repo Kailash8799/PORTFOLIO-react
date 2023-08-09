@@ -23,7 +23,7 @@ const About = () => {
         }}
         exit={{ y: 100 }}
         id="skills"
-        className="mt-10 mb-20 sm:mx-16 md:mx-10 lg:mx-30 sm:mt-0"
+        className="mt-10 selection:bg-none mb-20 sm:mx-16 md:mx-10 lg:mx-30 sm:mt-0"
       >
         <div className="text-center sm:pt-10">
           <h1 className="inline-block text-white border-b-4 border-yellow-500 rounded-lg font ">
