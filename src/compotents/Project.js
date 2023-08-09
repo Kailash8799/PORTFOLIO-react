@@ -41,10 +41,14 @@ const About = () => {
           github={"https://github.com/Kailash8799/foody-reactnative-app"}
         />
         <Projectdesk
-          img={["img-1.png", "img-2.png"]}
-          title="E-Commerse"
-          desc="A portfolio website made with React.Js for presenting my projects in an organized and decorated way."
+          img={["ins1.jpg", "ins2.jpg", "ins3.jpg", "ins4.jpg", "ins5.jpg", "ins6.jpg", "ins7.jpg", "ins8.jpg"]}
+          title="Instagram-clone"
+          desc="A instagram-clone made with react native and tailwind css with firebase for improve knowledge in react native."
           lang={["reacti.svg", "javascripti.svg"]}
+          link={
+            "https://www.linkedin.com/feed/update/urn:li:activity:7068466287584116736/"
+          }
+          github={"https://github.com/Kailash8799/foody-reactnative-app"}
         />
         <Projectdesk
           img={["img-1.png", "img-2.png"]}
