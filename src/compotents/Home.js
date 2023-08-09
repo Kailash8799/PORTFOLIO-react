@@ -12,13 +12,12 @@ const Home = () => {
         className="items-center selection:bg-none pb-3 mt-10 rounded-lg sm:flex bgbackhome sm:mx-16 md:mx-10 lg:mx-28 divh sm:mt-0"
       >
         <motion.div
-          initial={{ x: -400 }}
+          initial={{ x: -200 }}
           viewport={{ once: true }}
           whileInView={{
             x: 0,
             transition: { duration: 1, ease: "easeInOut" },
           }}
-          exit={{ x: -400 }}
           className="justify-center sm:w-1/2"
         >
           <img
@@ -29,13 +28,15 @@ const Home = () => {
             className="justify-center mx-auto rounded-xl"
           />
         </motion.div>
-        <motion.div initial={{ x: 500 }}
-        viewport={{ once: true }}
-        whileInView={{
-          x: 0,
-          transition: { duration: 1, ease: "easeInOut" },
-        }}
-        exit={{ x: 100 }} className="mx-5 mt-5 sm:w-1/2 sm:mx-0 sm:mt-0">
+        <motion.div
+          initial={{ x: 200 }}
+          viewport={{ once: true }}
+          whileInView={{
+            x: 0,
+            transition: { duration: 1, ease: "easeInOut" },
+          }}
+          className="mx-5 mt-5 sm:w-1/2 sm:mx-0 sm:mt-0"
+        >
           <h1 className="text-4xl text-white md:text-5xl font">Hy! I Am</h1>
           <h1 className="my-2 text-3xl namec font sm:text-5xl">
             Kailash Rajput

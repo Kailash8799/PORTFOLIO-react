@@ -14,10 +14,11 @@ const About = () => {
           </h1>
         </div>
         <Projectdesk
-          img={["img-1.png", "img-2.png"]}
+          img={["port-1.png", "port-2.png", "port-3.png", "port-4.png", "port-5.png", "port-6.png", "port-7.png", "port-8.png"]}
           title="My Portfolio"
           desc="A portfolio website made with React.Js for presenting my projects in an organized and decorated way."
           lang={["reacti.svg", "javascripti.svg"]}
+          link={"https://kailashrajput.vercel.app"}
         />
         <Projectdesk
           img={["img-1.png", "img-2.png"]}
