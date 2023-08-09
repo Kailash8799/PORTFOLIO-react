@@ -34,7 +34,7 @@ const About = () => {
           {Object.keys(lang).map((itm) => {
             return (
               <motion.div
-                initial={{ opacity: 0, scale: 0.5, y: 200 }}
+                initial={{ opacity: 0, scale: 0.5, y: 100 }}
                   whileInView={{
                     y: 0,
                     transition: { duration: 1, ease: "easeInOut" },

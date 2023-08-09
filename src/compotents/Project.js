@@ -25,6 +25,24 @@ const About = () => {
           desc="A portfolio website made with React.Js for presenting my projects in an organized and decorated way."
           lang={["reacti.svg", "javascripti.svg"]}
         />
+        <Projectdesk
+          img={["img-1.png", "img-2.png"]}
+          title="E-Commerse"
+          desc="A portfolio website made with React.Js for presenting my projects in an organized and decorated way."
+          lang={["reacti.svg", "javascripti.svg"]}
+        />
+        <Projectdesk
+          img={["img-1.png", "img-2.png"]}
+          title="E-Commerse"
+          desc="A portfolio website made with React.Js for presenting my projects in an organized and decorated way."
+          lang={["reacti.svg", "javascripti.svg"]}
+        />
+        <Projectdesk
+          img={["img-1.png", "img-2.png"]}
+          title="E-Commerse"
+          desc="A portfolio website made with React.Js for presenting my projects in an organized and decorated way."
+          lang={["reacti.svg", "javascripti.svg"]}
+        />
       </div>
       <hr className="text-white border-2" />
     </>

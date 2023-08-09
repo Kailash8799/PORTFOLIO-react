@@ -23,25 +23,25 @@ const About = () => {
         </div>
         <div className="items-center pt-10 lg:mt-5 lg:flex">
           <motion.div
-            initial={{ x: -500 }}
+            initial={{ y: 100 }}
             viewport={{ once: true }}
             whileInView={{
-              x: 0,
+              y: 0,
               transition: { duration: 1, ease: "easeInOut" },
             }}
-            exit={{ x: -100 }}
+            exit={{ y: -100 }}
             className="items-center pb-4 mx-5 lg:w-1/3 lg:m-0"
           >
             <img src={Im} alt="" className="mx-auto rounded-full h96" />
           </motion.div>
           <motion.div
-            initial={{ x: 500 }}
+            initial={{ y: 100 }}
             viewport={{ once: true }}
             whileInView={{
-              x: 0,
+              y: 0,
               transition: { duration: 1, ease: "easeInOut" },
             }}
-            exit={{ x: 100 }}
+            exit={{ y: 100 }}
             className="px-6 lg:w-2/3 lg:pl-28 lg:pr-4"
           >
             <h1 className="namec">
