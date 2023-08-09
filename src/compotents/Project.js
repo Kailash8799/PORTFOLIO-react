@@ -51,16 +51,20 @@ const About = () => {
           github={"https://github.com/Kailash8799/foody-reactnative-app"}
         />
         <Projectdesk
-          img={["img-1.png", "img-2.png"]}
-          title="E-Commerse"
+          img={["fd1.png", "fd2.png", "fd3.png", "fd4.png", "fd5.png", "fd6.png", "fd7.png", "fd8.png"]}
+          title="Food delivery"
           desc="A portfolio website made with React.Js for presenting my projects in an organized and decorated way."
           lang={["reacti.svg", "javascripti.svg"]}
+          link={"https://food-delivery-react-js-app.vercel.app"}
+          github={"https://github.com/Kailash8799/food-delivery-next-js"}
         />
         <Projectdesk
-          img={["img-1.png", "img-2.png"]}
-          title="E-Commerse"
+          img={["em1.png", "em2.png", "em3.png", "em4.png", "em5.png", "em6.png", "em7.png"]}
+          title="E-Commerse app"
           desc="A portfolio website made with React.Js for presenting my projects in an organized and decorated way."
           lang={["reacti.svg", "javascripti.svg"]}
+          link={"https://shoppywebapp.netlify.app/"}
+          github={"https://github.com/Kailash8799/mernstack"}
         />
       </div>
       <hr className="text-white border-2" />
